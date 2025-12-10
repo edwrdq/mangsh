@@ -1,9 +1,9 @@
 mod app;
-mod ui;
-mod ssh;
 mod config;
+mod theme;
+mod ui;
 
-fn main() {
+fn main() -> anyhow::Result<()> {
     let mut app = app::App::new();
-    app.run();
+    app.run()
 }

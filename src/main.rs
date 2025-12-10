@@ -1,3 +1,9 @@
+mod app;
+mod ui;
+mod ssh;
+mod config;
+
 fn main() {
-    println!("Hello, world!");
+    let mut app = app::App::new();
+    app.run();
 }
